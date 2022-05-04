@@ -45,7 +45,7 @@ $('#formMaestros').submit(function(e){
           datatype:"json",
           data:  {clave_maestro:clave_maestro, nombre:nombre, ape_paterno:ape_paterno, ape_materno:ape_materno, edad:edad, calle:calle , num_casa:num_casa, cruzamiento1:cruzamiento1, cruzamiento2:cruzamiento2, id_colonia:id_colonia},
           success: function(data) {
-            tablaMaestrosrios.ajax.reload(null, false);
+            tablaMaestros.ajax.reload(null, false);
            }
         });
     $('#modalCRUD').modal('hide');
@@ -107,7 +107,7 @@ $(document).on("click", ".btnBorrar", function(){
           datatype:"json",
           data:  {opcion:opcion, clave_maestro:clave_maestro},
           success: function() {
-              tablaMaestrosrios.row(fila.parents('tr')).remove().draw();
+              tablaMaestros.row(fila.parents('tr')).remove().draw();
            }
         });
     }
