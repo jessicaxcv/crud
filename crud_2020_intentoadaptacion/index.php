@@ -40,17 +40,18 @@
         <div class="row">
             <div class="col-lg-12">
             <div class="table-responsive">
-                <table id="tablaUsuarios" class="table table-striped table-bordered table-condensed" style="width:100%" >
+                <table id="tablaMaestros" class="table table-striped table-bordered table-condensed" style="width:100%" >
                     <thead class="text-center">
                         <tr>
-                            <th>Clave maestro</th>
+                            <th>clave_maestro</th>
                             <th>Nombre</th>
                             <th>Apellido Paterno</th>
                             <th>Apellido Materno</th>
                             <th>edad</th>
                             <th>Calle</th>
-                            <th>Numero de casa</th>
-                            <th>Cruzamientos</th>
+                            <th>No. de casa</th>
+                            <th>Cruzamiento1</th>
+                            <th>Cruzamiento2</th>
                             <th>Colonia</th>
                             <th>CP</th>
                         </tr>
@@ -72,7 +73,7 @@
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span>
                 </button>
             </div>
-        <form id="formUsuarios">
+        <form id="formMaestros">
             <div class="modal-body">
               <div class="row">
                 <div class="col-lg-12">
@@ -92,7 +93,7 @@
                     <div class="col-lg-6">
                     <div class="form-group">
                     <label for="" class="col-form-label">Apellido Paterno</label>
-                    <input type="text" class="form-control" id="apep">
+                    <input type="text" class="form-control" id="ape_paterno">
                     </div>
                     </div>
                 </div>
@@ -100,7 +101,7 @@
                     <div class="col-lg-6">
                     <div class="form-group">
                     <label for="" class="col-form-label">Apellido Materno</label>
-                    <input type="text" class="form-control" id="apem">
+                    <input type="text" class="form-control" id="ape_materno">
                     </div>
                     </div>
                     <div class="col-lg-6">
@@ -119,8 +120,8 @@
                     </div>
                     <div class="col-lg-3">
                         <div class="form-group">
-                        <label for="" class="col-form-label">Numero de casa</label>
-                        <input type="number" class="form-control" id="numcasa">
+                        <label for="" class="col-form-label">No. de casa</label>
+                        <input type="number" class="form-control" id="num_casa">
                         </div>
                     </div>
                 </div>
@@ -128,13 +129,13 @@
                     <div class="col-lg-4">
                         <div class="form-group">
                         <label for="" class="col-form-label">Cruzamiento 1</label>
-                        <input type="text" class="form-control" id="cruz1">
+                        <input type="text" class="form-control" id="cruzamiento1">
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="form-group">
                         <label for="" class="col-form-label">Cruzamiento 2</label>
-                        <input type="text" class="form-control" id="cruz2">
+                        <input type="text" class="form-control" id="cruzamiento2">
                         </div>
                     </div>
                 </div>
@@ -142,7 +143,7 @@
                   <div class="col-lg-12">
                     <div class="form-group">
                     <label for="" class="col-form-label">Colonia</label>
-                    <input type="text" class="form-control" id="colonia">
+                    <input type="text" class="form-control" id="id_colonia">
                     </div>
                   </div>
                 </div>

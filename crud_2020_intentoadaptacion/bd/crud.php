@@ -11,10 +11,10 @@ $calle = (isset($_POST['calle'])) ? $_POST['calle'] : '';
 $num_casa = (isset($_POST['num_casa'])) ? $_POST['num_casa'] : '';
 $cruzamiento1 = (isset($_POST['cruzamiento1'])) ? $_POST['cruzamiento1'] : '';
 $cruzamiento2 = (isset($_POST['cruzamiento2'])) ? $_POST['cruzamiento2'] : '';
-
 $id_colonia = (isset($_POST['id_colonia'])) ? $_POST['id_colonia'] : '';
-$clave_maestro = (isset($_POST['clave_maestro'])) ? $_POST['clave_maestro'] : '';
 
+$clave_maestro = (isset($_POST['clave_maestro'])) ? $_POST['clave_maestro'] : '';
+$opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 
 switch($opcion){
     case 1:
