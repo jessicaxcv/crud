@@ -79,15 +79,16 @@ $(document).on("click", ".btnEditar", function(){
     cruzamiento2 = fila.find('td:eq(8)').text();
     id_colonia = fila.find('td:eq(9)').text();
     
+    $("#clave_maestro").val(clave_maestro);
     $("#nombre").val(nombre);
     $("#ape_paterno").val(ape_paterno);
     $("#ape_materno").val(ape_materno);
     $("#edad").val(edad);
     $("#calle").val(calle);
     $("#num_casa").val(num_casa);
-    $("#cruzamiento1").val(cruz1);
-    $("#cruzamiento2").val(cruz2);
-    $("#id_colonia").val(colonia);
+    $("#cruzamiento1").val(cruzamiento1);
+    $("#cruzamiento2").val(cruzamiento2);
+    $("#id_colonia").val(id_colonia);
     $(".modal-header").css("background-color", "#007bff");
     $(".modal-header").css("color", "white" );
     $(".modal-title").text("Editar Usuario");

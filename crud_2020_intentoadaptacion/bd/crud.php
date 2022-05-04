@@ -28,7 +28,7 @@ switch($opcion){
         $data=$resultado->fetchAll(PDO::FETCH_ASSOC);
         break;
     case 2:
-        $consulta = "UPDATE maestro SET nombre='$nombre', ape_paterno='$ape_paterno', ape_materno='$ape_materno', edad='$edad', calle='$calle', num_casa='$num_casa', cruzamiento1 = '$cruzamiento1', cruzamiento2 = '$cruzamiento2', id_colonia = '$id_colonia' WHERE clave_maestro='$clave_maestro' ";
+        $consulta = "UPDATE maestro SET nombre='$nombre', ape_paterno='$ape_paterno', ape_materno='$ape_materno', edad='$edad', calle='$calle', num_casa='$num_casa', cruzamiento1 = '$cruzamiento1', cruzamiento2 = '$cruzamiento2', id_colonia = '$id_colonia' WHERE clave_maestro='$clave_maestro'";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
 
