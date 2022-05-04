@@ -53,7 +53,7 @@
                             <th>Cruzamiento1</th>
                             <th>Cruzamiento2</th>
                             <th>Colonia</th>
-                            <th>CP</th>
+                            <th>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
