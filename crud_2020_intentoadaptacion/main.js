@@ -100,7 +100,7 @@ $(document).on("click", ".btnBorrar", function(){
     fila = $(this);
     clave_maestro = $(this).closest('tr').find('td:eq(0)').text() ;
     opcion = 3; //eliminar
-    var respuesta = confirm("¿Está seguro de borrar el registro "+clave_maestro+"?");
+    var respuesta = confirm("¿Está seguro que desea borrar el registro "+clave_maestro+"?");
     if (respuesta) {
         $.ajax({
           url: "bd/crud.php",
