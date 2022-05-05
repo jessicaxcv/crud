@@ -68,7 +68,7 @@ $("#btnNuevo").click(function(){
 $(document).on("click", ".btnEditar", function(){
     opcion = 2;//editar
     fila = $(this).closest("tr");
-    clave_maestro = parseInt(fila.find('td:eq(0)').text()); //capturo el ID
+    clave_maestro = fila.find('td:eq(0)').text(); //capturo el ID
     nombre = fila.find('td:eq(1)').text();
     ape_paterno = fila.find('td:eq(2)').text();
     ape_materno = fila.find('td:eq(3)').text();
@@ -98,7 +98,7 @@ $(document).on("click", ".btnEditar", function(){
 //Borrar
 $(document).on("click", ".btnBorrar", function(){
     fila = $(this);
-    clave_maestro = parseInt($(this).closest('tr').find('td:eq(0)').text()) ;
+    clave_maestro = $(this).closest('tr').find('td:eq(0)').text() ;
     opcion = 3; //eliminar
     var respuesta = confirm("¿Está seguro de borrar el registro "+clave_maestro+"?");
     if (respuesta) {
