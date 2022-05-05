@@ -18,7 +18,7 @@ $opcion = (isset($_POST['opcion'])) ? $_POST['opcion'] : '';
 
 switch($opcion){
     case 1:
-        $consulta = "INSERT INTO maestro (clave_maestro, nombre, ape_paterno, ape_materno, edad, calle, num_casa, cruzamiento1, cruzamiento2, id_colonia) VALUES('$clave_maestro','$nombre', '$ape_paterno', '$ape_materno', '$edad', '$calle', '$num_casa', '$crazamiento1', '$cruzamiento2', 'id_colonia') ";
+        $consulta = "INSERT INTO maestro (clave_maestro, nombre, ape_paterno, ape_materno, edad, calle, num_casa, cruzamiento1, cruzamiento2, id_colonia) VALUES('$clave_maestro','$nombre', '$ape_paterno', '$ape_materno', '$edad', '$calle', '$num_casa', '$crazamiento1', '$cruzamiento2', '$id_colonia') ";
         $resultado = $conexion->prepare($consulta);
         $resultado->execute();
 
